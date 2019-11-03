@@ -15,8 +15,8 @@ class EmailAddressParser
   def parse
     cvs_emails.split.collect {
         |addresses|  
-        addresses.
+        address.split(',') 
+    end
+    .flatten.uniq 
 
-  end 
-  
-end 
+ end 
